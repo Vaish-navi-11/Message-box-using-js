@@ -1,0 +1,42 @@
+.content{
+    width: 600px;
+    background-color: rgb(247, 249, 224);
+    border: 1px solid rgb(248, 213, 57) ;
+    box-shadow: 10px 10px 10px rgb(248, 213, 57);
+    padding: 20px;
+    margin: 50px auto;
+}
+img{
+    height: 300px;
+    width: 300px;
+    margin: 0px auto;
+    display: block;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+input[type="text"]{
+    width: 400px;
+    padding: 10px;
+    display: block;
+    margin: 10px auto;
+}
+button{
+    width: 150px;
+    padding: 10px;
+    background-color: rgb(248, 213, 57);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px auto;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: 2px 5px 2px rgb(55, 43, 0);
+}
+.buttons{
+    display: block;
+    margin: 10px 140px;
+}

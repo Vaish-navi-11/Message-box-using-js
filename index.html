@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <img src="file.png" alt="img">
+        <h1>Ask Me a Question</h1>
+        <input type="text" placeholder="Type Something" class="answer">
+        <div class="buttons">
+        <button onclick="accept()">Accept</button>
+        <button onclick="decline()">Decline</button>
+    </div>
+    </div>
+    <script>
+        let questions=["What is FullStack?","What do you know about javascript?","How to create box in HTML?","What are the css box property?","How to make responsive webpages?"];
+        function accept() {
+            let answer=document.querySelector(".answer").value;
+            if(questions.includes(answer)) {
+            alert("Your Question is Accepted!"); 
+            }     
+           else 
+           alert("Your Question is Invalid!");
+           decline();
+          }
+        function decline() {
+            window.location.reload();
+        }
+    </script>
+</body>
+</html>
